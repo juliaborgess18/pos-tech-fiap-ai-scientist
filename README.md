@@ -21,7 +21,8 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ├── reports/           <- Análises geradas (HTML, PDF) e pastas de figuras.
 │   └── 1.0-jbs-eda_files/ <- Pasta com arquivos para gerar o html dos reports utilizando Quarto.
 │   └── figures/ <- Pasta auxiliar para imagens dos reports.
-│   └── 1.0-jbs-eda.html  <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb.
+│   └── 1.0-jbs-eda.html  <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb em HTML.
+│   └── 1.0-jbs-eda.pdf   <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb em PDF.
 ├── .env               <- Variáveis de ambiente (credenciais, caminhos locais).
 ├── .gitignore         <- Arquivos e pastas ignorados pelo Git (ex: data/ e .env).
 ├── Makefile           <- Comandos de conveniência (ex: `make data` ou `make train`).
