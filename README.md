@@ -8,6 +8,7 @@ Este repositório centraliza os desafios e projetos desenvolvidos durante a pós
 
 O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e organização dos artefatos de Data Science:
 
+``` text
 ├── data/              <- Armazenamento de dados (raw, interim, processed, external).
 ├── docs/              <- Documentação técnica do projeto.
 ├── models/            <- Modelos treinados ou sumários de performance.
@@ -27,7 +28,7 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ├── pyproject.toml     <- Configurações de metadados e ferramentas de build.
 ├── README.md          <- Documentação principal do repositório.
 └── requirements.txt   <- Bibliotecas necessárias para reproduzir o ambiente.
-
+```
 ---
 
 ## Como Reproduzir as Análises
