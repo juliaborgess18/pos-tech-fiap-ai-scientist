@@ -13,9 +13,8 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ├── docs/              <- Documentação técnica do projeto.
 ├── models/            <- Modelos treinados ou sumários de performance.
 ├── notebooks/         <- Jupyter notebooks organizados:
-│   └── 1.0-jbs-eda.ipynb  <- Análise Exploratória e Diagnóstico do Case NPS Preditivo.
-│       ├── Objetivo: Entender o impacto logístico/atendimento no NPS e identificar o ponto de ruptura.
-│       └── Descobertas: Correlação de -0.60 com atraso; queda de 39.4% no 5º dia de delay.
+│   └── 1.0-jbs-eda.ipynb       <- Análise Exploratória e Diagnóstico do Case NPS Preditivo.
+│   └── 1.0-jbs-modeling.ipynb  <- Desenvolvimento de modelo preditivo para antecipar a satisfação do cliente.
 ├── projetos_pos_tech_fiap/ <- Código-fonte (Módulo Python do projeto).
 ├── references/        <- Dicionários de dados e materiais explicativos.
 ├── reports/           <- Análises geradas (HTML, PDF) e pastas de figuras.
@@ -35,8 +34,8 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ## Como Reproduzir as Análises
 
 ### Pré-requisitos
-* Python 3.8+
-* Pandas, Seaborn e Matplotlib
+* Python 3.12+
+* Pandas, Seaborn, Matplotlib e Scikit-learn
 
 ### Passo a Passo
 
