@@ -1,61 +1,59 @@
-# Projetos Pos-tech FIAP
+# Projetos Pós-Tech FIAP 
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+Este repositório centraliza os desafios e projetos desenvolvidos durante a pós-graduação em **AI Science** na FIAP. Cada projeto está organizado para demonstrar a aplicação de técnicas de Ciência de Dados e Inteligência Artificial em problemas reais de negócio.
 
-Neste diretório estarão todos os projetos referentes à Pós tech  da FIAP
+---
 
-## Project Organization
+## Estrutura do Repositório
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         projetos_pos_tech_fiap and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── projetos_pos_tech_fiap   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes projetos_pos_tech_fiap a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e organização dos artefatos de Data Science:
 
---------
+├── data/              <- Armazenamento de dados (raw, interim, processed, external).
+├── docs/              <- Documentação técnica do projeto.
+├── models/            <- Modelos treinados ou sumários de performance.
+├── notebooks/         <- Jupyter notebooks organizados:
+│   └── 1.0-jbs-eda.ipynb  <- Análise Exploratória e Diagnóstico do Case NPS Preditivo.
+│       ├── Objetivo: Entender o impacto logístico/atendimento no NPS e identificar o ponto de ruptura.
+│       └── Descobertas: Correlação de -0.60 com atraso; queda de 39.4% no 5º dia de delay.
+├── projetos_pos_tech_fiap/ <- Código-fonte (Módulo Python do projeto).
+├── references/        <- Dicionários de dados e materiais explicativos.
+├── reports/           <- Análises geradas (HTML, PDF) e pastas de figuras.
+│   └── 1.0-jbs-eda_files/ <- Pasta com arquivos para gerar o html dos reports utilizando Quarto.
+│   └── figures/ <- Pasta auxiliar para imagens dos reports.
+│   └── 1.0-jbs-eda.html  <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb.
+├── .env               <- Variáveis de ambiente (credenciais, caminhos locais).
+├── .gitignore         <- Arquivos e pastas ignorados pelo Git (ex: data/ e .env).
+├── Makefile           <- Comandos de conveniência (ex: `make data` ou `make train`).
+├── pyproject.toml     <- Configurações de metadados e ferramentas de build.
+├── README.md          <- Documentação principal do repositório.
+└── requirements.txt   <- Bibliotecas necessárias para reproduzir o ambiente.
 
+---
+
+## Como Reproduzir as Análises
+
+### Pré-requisitos
+* Python 3.8+
+* Pandas, Seaborn e Matplotlib
+
+### Passo a Passo
+
+1.  **Clonar o repositório:**
+    ``` bash
+    git clone https://github.com/seu-usuario/projetos_pos_tech_fiap.git
+    cd projetos_pos_tech_fiap
+    ```
+
+2.  **Instalar as dependências:**
+    ```bash
+    pip install -r 'requirements.txt'
+    ```
+
+3.  **Executar o Notebook:**
+    Navegue até a pasta `/notebooks` e abra o notebook de interesse em seu ambiente Jupyter ou VS Code para visualizar os gráficos construídos.
+
+---
+
+**Autor:** Júlia Borges Santos (JBS)
+
+**Curso:** Pós-Graduação em AI Science - FIAP
