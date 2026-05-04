@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <p><span style="color: red;">● delivery_delay_days (quantidade de dias de atraso na entrega; corr=-0.60).</span></p>
 <p><span style="color: red;">● complaints_count (número de reclamações registradas pelo cliente; corr=-0.50).</span></p>
 <p><span style="color: red;">● customer_service_contacts (número de contatos do cliente com o atendimento; corr=-0.35).</span></p>
-<div id="280a884a" class="cell" data-execution_count="3">
+<div id="280a884a" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 <p><span style="color: red;">O principal motivo que mais gera detratores é o tempo de atrasado da entrega (corr=-0.60), e isso releva o quão importante é o cumprimento dos prazos nesse cenário.</span></p>
 <p><span style="color: red;">Além disso, a variável <strong>complaints_count</strong> tem forte relação direta com a variável <strong>customer_service_contacts</strong> (número de contatos do cliente com o atendimento), isso na prática sugere que o principal motivo pelos quais surgem os contatos geralmente está relacionada a dúvidas ou reclamações, e a quantidade de reclamações está associada ao nps de forma inversamente proporcional, ou seja, quanto maior o número de reclamações, menor é a nota de nps.</span></p>
 <p><span style="color: red;">Para entender melhor o ponto de ruptura, foi destrinchado a variável que apresenta maior impacto negativo no nps: o <strong>tempo de atraso na entrega</strong>:</span></p>
-<div id="5ae08921" class="cell" data-execution_count="4">
+<div id="5ae08921" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><span style="color: red;">O gráfico em questão nos revela que, a medida que o tempo de atraso aumenta a média do NPS diminui, e essa queda é ainda mais acentuada entre os dias 4 e 5 de <em>delay</em>, onde a média da nota sofre uma redução de 39.4%. Ou seja, até o 4º dia o cliente ainda tem certa tolerância, porém, quando o atraso entra no 5º dia, o cliente já está insatisfeito com a empresa, e se torna mais difícil tentar reverter a situação.</span></p>
 <p><span style="color: red;">Para verificar o tipo de cliente que tende a ter NPS mais alto ou mais baixo, foi gerado os seguintes gráficos com as principais variáveis relacionadas ao aumento e diminuição do target:</span></p>
-<div id="ad20fae1" class="cell" data-execution_count="5">
+<div id="ad20fae1" class="cell">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
