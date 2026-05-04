@@ -18,9 +18,6 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ├── projetos_pos_tech_fiap/ <- Código-fonte (Módulo Python do projeto).
 ├── references/        <- Dicionários de dados e materiais explicativos.
 ├── reports/           <- Análises geradas (HTML, PDF) e pastas de figuras.
-│   └── 1.0-jbs-eda_files/ <- Pasta com arquivos para gerar o html dos reports utilizando Quarto.
-│   └── figures/ <- Pasta auxiliar para imagens dos reports.
-│   └── 1.0-jbs-eda.html  <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb em HTML.
 │   └── 1.0-jbs-eda.pdf   <- Report gerado pelo Quarto do notebook 1.0-jbs-eda.ipynb em PDF.
 ├── .env               <- Variáveis de ambiente (credenciais, caminhos locais).
 ├── .gitignore         <- Arquivos e pastas ignorados pelo Git (ex: data/ e .env).
@@ -29,6 +26,16 @@ O projeto segue uma estrutura padronizada para garantir a reprodutibilidade e or
 ├── README.md          <- Documentação principal do repositório.
 └── requirements.txt   <- Bibliotecas necessárias para reproduzir o ambiente.
 ```
+---
+
+## Highlights
+
+FASE 1: Estudo elaborado utilizando a ferramenta Quarto para apresentar a análise de dados de nps:
+
+![alt text](image-2.png)
+
+Para ver mais, acesse a pasta reports/1.0-jbs-eda.pdf
+
 ---
 
 ## Como Reproduzir as Análises
